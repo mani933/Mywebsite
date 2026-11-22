@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<title>Systems – Kapul</title>
+<meta name="description" content="Billing, management and payment systems built by Kapul for Kenyan businesses, ISPs, schools, clinics and SACCOs.">
+</head>
+<body>
+<canvas id="net" aria-hidden="true"></canvas>
+<div class="wrap">
+<div data-include="header"></div>
+<main>
+<div class="pagehead">
+  <h1>Systems I’ve built</h1>
+  <p>Each system below was built for a real business need in Kenya. Here’s what it is, who uses it and what it does.</p>
+  <ul class="jump">
+    <li><a href="#wifi">WiFi billing</a></li><li><a href="#wavupay">WavuPay</a></li><li><a href="#hms">Hospital</a></li><li><a href="#school">School</a></li><li><a href="#sacco">SACCO</a></li><li><a href="#welfare">Welfare</a></li><li><a href="#pos">POS</a></li><li><a href="#wamuzipass">WamuziPass</a></li><li><a href="#housing">House hunting</a></li>
+  </ul>
+</div>
+<article class="system" id="wifi">
+  <div><h2>WiFi billing systems</h2><p class="aka">Conzanet WiFi, Konnekti WiFi</p></div>
+  <dl>
+    <div><dt>What it is</dt><dd>A web billing system that lets a WiFi business sell internet access and collect payment, with the router managed from the same place.</dd></div>
+    <div><dt>Who it’s for</dt><dd>ISPs and hotspot owners who run MikroTik routers, including businesses with several locations.</dd></div>
+    <div><dt>What it does</dt><dd>Sells hotspot packages and PPPoE subscriptions, takes payment through M-Pesa STK Push, and connects to MikroTik RouterOS to manage customers’ access. Multi-location setups run from one system.</dd></div>
+    <div><dt>Built with</dt><dd><ul class="stack"><li>PHP</li><li>MySQL</li><li>MikroTik RouterOS</li><li>M-Pesa STK Push</li></ul></dd></div>
+  </dl>
+</article>
+<article class="system" id="wavupay">
+  <div><h2>WavuPay</h2><p class="aka">Payments for tenants</p></div>
+  <dl>
+    <div><dt>What it is</dt><dd>A payment system that collects money on behalf of businesses and passes it on to them.</dd></div>
+    <div><dt>Who it’s for</dt><dd>Tenant businesses that want customers’ M-Pesa payments to reach their own till, paybill or phone number.</dd></div>
+    <div><dt>What it does</dt><dd>Payments come in through M-Pesa C2B to the system first, are recorded per tenant, then settled to each tenant’s till, paybill or phone number.</dd></div>
+    <div><dt>Built with</dt><dd><ul class="stack"><li>M-Pesa C2B</li><li>Multi-tenant</li></ul></dd></div>
+  </dl>
+</article>
+<article class="system" id="hms">
+  <div><h2>MediCare HMS</h2><p class="aka">Hospital management system</p></div>
+  <dl>
+    <div><dt>What it is</dt><dd>A hospital management system for running the daily work of a clinic or hospital.</dd></div>
+    <div><dt>Who it’s for</dt><dd>Clinics and hospitals in Kenya. It is a product I sell, not a one-off.</dd></div>
+    <div><dt>What it does</dt><dd>Keeps the hospital’s patient, records and billing work in one web system so staff stop juggling paper files and separate tools.</dd></div>
+    <div><dt>Built with</dt><dd><ul class="stack"><li>PHP</li><li>MySQL</li></ul></dd></div>
+  </dl>
+</article>
+<article class="system" id="school">
+  <div><h2>Shule Manager</h2><p class="aka">School management system</p></div>
+  <dl>
+    <div><dt>What it is</dt><dd>A school management system built around the Kenyan curriculum, where many schools use one platform.</dd></div>
+    <div><dt>Who it’s for</dt><dd>Kenyan schools, each with its own private space. Schools pay through subscriptions.</dd></div>
+    <div><dt>What it does</dt><dd>Organises school work into modules, gives every school its own data, and handles subscriptions. It started in PHP and MySQL and is being rebuilt in React, Node.js and Supabase.</dd></div>
+    <div><dt>Built with</dt><dd><ul class="stack"><li>PHP</li><li>MySQL</li><li>React</li><li>Node.js</li><li>Supabase</li></ul></dd></div>
+  </dl>
+</article>
+<article class="system" id="sacco">
+  <div><h2>Boda Boda SACCO system</h2><p class="aka">Rider and SACCO management</p></div>
+  <dl>
+    <div><dt>What it is</dt><dd>A management system for boda boda SACCOs, the savings groups motorcycle taxi riders belong to.</dd></div>
+    <div><dt>Who it’s for</dt><dd>SACCO officials and stage chairmen who need to keep track of their riders.</dd></div>
+    <div><dt>What it does</dt><dd>Holds the rider registry and the SACCO’s modules, with a role for stage chairmen. It is being rewritten from PHP into a modern React, Vercel and Supabase setup.</dd></div>
+    <div><dt>Built with</dt><dd><ul class="stack"><li>React</li><li>Vercel</li><li>Supabase</li></ul></dd></div>
+  </dl>
+</article>
+<article class="system" id="welfare">
+  <div><h2>Funeral welfare system</h2><p class="aka">Member welfare management</p></div>
+  <dl>
+    <div><dt>What it is</dt><dd>A system for welfare groups that support members during bereavement.</dd></div>
+    <div><dt>Who it’s for</dt><dd>Funeral and community welfare groups with a list of members who contribute every month.</dd></div>
+    <div><dt>What it does</dt><dd>Registers members, tracks monthly contributions paid through the group’s M-Pesa till, and sends SMS reminders to members.</dd></div>
+    <div><dt>Built with</dt><dd><ul class="stack"><li>PHP</li><li>MySQL</li><li>M-Pesa till</li><li>SMS</li></ul></dd></div>
+  </dl>
+</article>
+<article class="system" id="pos">
+  <div><h2>DukaPOS</h2><p class="aka">Point of sale for shops</p></div>
+  <dl>
+    <div><dt>What it is</dt><dd>A point of sale system sold as a subscription service for shops.</dd></div>
+    <div><dt>Who it’s for</dt><dd>Small and medium shops in Kenya.</dd></div>
+    <div><dt>What it does</dt><dd>Handles sales at the counter and accepts both M-Pesa and cash payments.</dd></div>
+    <div><dt>Built with</dt><dd><ul class="stack"><li>SaaS</li><li>M-Pesa</li></ul></dd></div>
+  </dl>
+</article>
+<article class="system" id="wamuzipass">
+  <div><h2>WamuziPass</h2><p class="aka">Digital ID and QR verification</p></div>
+  <dl>
+    <div><dt>What it is</dt><dd>A system that creates digital IDs and lets anyone check that an ID is genuine.</dd></div>
+    <div><dt>Who it’s for</dt><dd>Organisations that issue IDs and the people who need to verify them. Built for Wamuzi.</dd></div>
+    <div><dt>What it does</dt><dd>Creates a digital ID for each person, attaches a QR code, and verifies the ID when the code is scanned.</dd></div>
+    <div><dt>Built with</dt><dd><ul class="stack"><li>QR codes</li><li>Vercel</li></ul></dd></div>
+  </dl>
+</article>
+<article class="system" id="housing">
+  <div><h2>Nyumba Konnect</h2><p class="aka">House-hunting website</p></div>
+  <dl>
+    <div><dt>What it is</dt><dd>A website where tenants and landlords find each other. It began as KejaHub.</dd></div>
+    <div><dt>Who it’s for</dt><dd>Tenants looking for a home and landlords with rentals to list.</dd></div>
+    <div><dt>What it does</dt><dd>Lists rentals so tenants can browse them and reach landlords, and uses an M-Pesa unlock fee as part of how it earns.</dd></div>
+    <div><dt>Built with</dt><dd><ul class="stack"><li>PHP</li><li>MySQL</li><li>M-Pesa</li></ul></dd></div>
+  </dl>
+</article>
+<div class="cta">
+  <h2>Need something like this?</h2>
+  <p>Each system can be adapted to your business, or I can build something new from scratch.</p>
+  <a class="btn" href="contact.html">Tell me what you need</a>
+</div>
+</main>
+<div data-include="footer"></div>
+</div>
+<script src="js/include.js"></script>
+<script src="js/effects.js"></script>
+</body>
+</html>

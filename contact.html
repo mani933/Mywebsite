@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<title>Contact – Kapul</title>
+<meta name="description" content="Contact Kapul about web development, systems development, networking and ICT services in Kenya.">
+</head>
+<body>
+<canvas id="net" aria-hidden="true"></canvas>
+<div class="wrap">
+<div data-include="header"></div>
+<main>
+<div class="pagehead">
+  <h1>Let’s talk about your project</h1>
+  <p>Tell me what you need. I’ll reply with a plain answer on how I’d build it and what it would take.</p>
+</div>
+<div class="channels">
+  <a class="channel" href="https://wa.me/254768198051"><h2>WhatsApp</h2><p>0768 198 051</p></a>
+  <a class="channel" href="tel:+254768198051"><h2>Call</h2><p>0768 198 051</p></a>
+  <a class="channel" href="mailto:truedesignssolutions@gmail.com"><h2>Email</h2><p>truedesignssolutions@gmail.com</p></a>
+  <div class="channel"><h2>Location</h2><p>Based in Kenya</p></div>
+</div>
+<form class="form" id="contact-form">
+  <h2>Send a message</h2>
+  <p class="hint">This opens WhatsApp with your message filled in. You press send.</p>
+  <label for="name">Your name</label>
+  <input id="name" name="name" autocomplete="name" required>
+  <label for="service">What do you need?</label>
+  <select id="service" name="service">
+    <option>Web development</option><option>Systems development</option><option>Networking</option><option>ICT services</option><option>Something else</option>
+  </select>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" required></textarea>
+  <button class="btn primary" type="submit">Send on WhatsApp</button>
+</form>
+</main>
+<div data-include="footer"></div>
+</div>
+<script src="js/include.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
