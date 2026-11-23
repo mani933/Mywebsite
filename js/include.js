@@ -20,4 +20,9 @@
       .then(function (html) { el.innerHTML = html; finish(el); })
       .catch(function () { el.innerHTML = fallback[name] || ""; finish(el); });
   });
+
+  var refined = document.createElement("script");
+  refined.src = "js/refined.js";
+  refined.defer = true;
+  document.body.appendChild(refined);
 })();
